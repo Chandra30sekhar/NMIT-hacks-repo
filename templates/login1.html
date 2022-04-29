@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      
+      <title>Responsive Login an Registration Page with Video Backgroud</title>
+      <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header>
+      <nav>
+          <a href="/login1.html" class="home-logo"><h2 class="home-logo">IMAGE ORGANIZER</h2></a>
+          <ul>
+              <li><a href="#" class="nav-link">Login</a></li>
+              <li><a href="#" class="nav-link">SIGNUP</a></li>
+              <li><a href="#" class="nav-link">HOME</a></li>
+              <li><a href="#" class="nav-link">HELP</a></li>
+              <li><a href="#" class="nav-link">CONTACT</a></li>
+          </ul>
+      </nav>
+  </header>
+      <div class="accoutn_main">
+          <video muted loop autoplay class="video">
+              <source src="blackpic.mp4" type="video/mp4">
+          </video>
+  
+          <div class="form_area">
+              <div class="main_con">
+                  
+                      
+            
+                  </div>
+  
+                  <div class="form_con">
+                      <div class="log_form">
+                          <h2>Login </h2>
+                          <form action="">
+                              <div class="input-box">
+                                  <input type="email" name="email" required>
+                                  <label>Email</label>
+                              </div>
+                              <div class="input-box">
+                                  <input type="password" name="password" required>
+                                  <label>Password</label>
+                              </div>
+                              <div class="button">
+                                  <button type="submit">LOGIN</button>
+                              </div>
+                          </form>
+                      </div>
+  
+                      <!-- Registration form -->
+                      <div class="reg_form hidden">
+                          <h2>SIGNUP</h2>
+                          <form action="">
+                              <div class="input-box">
+                                  <input type="text" name="name" required>
+                                  <label>NAME</label>
+                              </div>
+                              <div class="input-box">
+                                  <input type="email" name="email" required>
+                                  <label>Email</label>
+                              </div>
+                              <div class="input-box">
+                                  <input type="password" name="password" required>
+                                  <label>Password</label>
+                              </div>
+                              <div class="input-box">
+                                <input type="password" name=" Confirm password" required>
+                                <label>Confirm Password</label>
+                            </div>
+                              <div class="button">
+                                  <button type="submit">SIGNUP</button>
+                              </div>
+                          </form>
+                      </div>
+                      <div class="text-center">
+                          <span id="action">Switch Mode</span>
+                      </div>
+                  </div>
+              
+          </div>
+      </div>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script>
+          $("#action").click(function(){
+              $(".log_form, .reg_form").toggle(1200);
+          });
+      </script>
+      <footer>
+          <table cellspacing="40">
+              <tr>n
+                  <td class="button"><img class="button" src="./instagram.svg"></td>
+                  <td class="button"><img src="./linkedin.svg"></td>
+                  <td class="button"><img src="./youtube.svg"></td>
+                  <td class="button"><img src="./github.svg"></td>
+              </tr>
+          </table>
+      </footer>
+  </body>
+  </html>
